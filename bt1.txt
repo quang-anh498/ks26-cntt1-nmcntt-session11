@@ -1,0 +1,11 @@
+Phần1 : 
+1. Tại vì khi mở bằng notepad sẽ không thể chứa hết được 800MB nên sẽ gây lên hiện tuọng giật lag, đơ màn hình. Notepad sẽ dọc toàn bộ nội dung những cấu trúc của file khiến máy bị quá tải dữ liệu..
+  Vì cat là của PowerShell chứ không phải của  CMD.
+
+
+Phần2: 
+ 1. Xem toàn bộ nội dung tệp: 
+      get-content server_log_800MB.log
+
+ 2. Chỉ xem 10 dòng cuối cùng: 
+      get-content server_log_800MB.log -tail 10 -wait

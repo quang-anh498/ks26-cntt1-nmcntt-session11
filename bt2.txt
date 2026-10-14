@@ -1,0 +1,8 @@
+Phần1 : 
+1. An đã dùng lầm  lệnh lên terminal không trả về kết quả và lệnh get-childitem chỉ là gọi thư mục có trong file chứ không tìm nội dụng bên trong file.
+2. Get-childitem là để gọi tên thư mục các file có trong thư mục.
+   Select-string là tìm kiếm nội dung, tên nội dung mình muốn tìm.
+
+Phần2 : 
+Câu lệnh chuẩn trên PowerShell để lọc từ khóa "error":
+  select-strinng "error" access.log -encoding utf8

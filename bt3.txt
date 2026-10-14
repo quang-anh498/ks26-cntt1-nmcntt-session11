@@ -1,0 +1,11 @@
+Phần1 :
+1. Đọc tệp 
+   get-content -r .*log
+2.  Lọc từ khóa 
+    select-string "TIMEOUT" | where-object { $_-notmatch "NOT TIMEOUT"}
+3. Đếm kết quả 
+    (Kết quả).Count
+
+Phần2 :
+   
+ Get-content -r server.log |select-string "TIMEOUT" | where-object { $_-notmatch "NOT TIMEOUT"} .Count
